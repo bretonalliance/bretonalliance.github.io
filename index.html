@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Password Protected</title>
+    <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self';
+      script-src 'self' cdnjs.cloudflare.com code.jquery.com;
+    ">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" always>
+    <meta http-equiv="X-Frame-Options" content="deny">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="/assets/css/login.css">
+  </head>
+
+  <body>
+    <div class="protected">
+      <div class="protected_alert" data-id="alert">You entered an incorrect password</div>
+      <div class="protected_content">
+        <h1 class="protected_content_heading">Disclaimer</h1>
+        <p>
+          This website, including the story, names, characters, websites, email addresses, phone numbers, places, and incidents portrayed are fictitious. No identification with actual persons (living or deceased), places, buildings, and products is intended or should be inferred.
+        </p>
+        <h1 class="protected_content_heading">You need a password to continue</h1>
+        <input class="protected_content_input" id="password" data-id="password" type="password" placeholder="password"/>
+        <button id="loginbutton" type="button" class="protected_content_btn">Continue</button>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha1/0.6.0/sha1.min.js"></script>
+    <script src="/assets/js/login.js"></script>
+  </body>
+</html>

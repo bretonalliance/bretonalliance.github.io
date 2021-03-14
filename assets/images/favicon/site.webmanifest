@@ -1,0 +1,19 @@
+{
+    "name": "Breton Alliance, Inc.",
+    "short_name": "BAI",
+    "icons": [
+        {
+            "src": "/assets/images/favicon/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/favicon/android-chrome-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#d9d9d9",
+    "background_color": "#d9d9d9",
+    "display": "standalone"
+}
